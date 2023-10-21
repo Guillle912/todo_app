@@ -5,7 +5,7 @@ export const createTodoHTML = ( todo ) => {
 
     const html = `
                     <div class="view">
-                        <input class="toggle" type="checkbox" ${ todo.done ? 'checked' : ''}>
+                        <input class="toggle" type="checkbox" ${ (todo.done) ? 'checked' : ''}>
                         <label>${ todo.description }</label>
                         <button class="destroy"></button>
                     </div>
